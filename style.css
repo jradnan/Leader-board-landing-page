@@ -1,11 +1,30 @@
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+    width: 0px; /* remove scrollbar space /
+    background: transparent; / optional: just make scrollbar invisible /
+    }
+    / optional: show position indicator in red */
+}
+    ::-webkit-scrollbar-thumb {
+    background: #FF0000;
+    }
+
+
 * {
     padding: 0px;
     margin: 0px;
     font-family: 'Poppins', sans-serif;
+
 }
 
 body {
     background-color: #F3F1FF;
+    width: 100%;
+
+
 }
 
 header {
@@ -53,7 +72,7 @@ header {
 }
 
 .hero-section {
-    /* width: 100%; */
+    width: 100%;
     max-width: 870px;
     margin: 36px auto;
     background-color: #FFFFFF;
@@ -125,16 +144,17 @@ header {
 
 /* ***********************course section************* */
 .course-section {
-    /* width: 100%; */
+    width: 100%;
     max-width: 870px;
     margin: 36px auto;
     background-color: #FFFFFF;
     padding: 30px;
     border-radius: 5px;
     margin-top: 44px;
-   
+
 }
-.course-plan{
+
+.course-plan {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 23px;
@@ -144,10 +164,12 @@ header {
 .course-img img {
     width: 224px;
 }
-.course-title > h3{
+
+.course-title>h3 {
     font-size: 20px;
     font-weight: 500;
 }
+
 .course-title>p>a {
     text-decoration: none;
     color: #ED6B4F;
@@ -159,10 +181,10 @@ header {
     font-size: 12px;
 
 }
-.rating{
+
+.rating {
     display: flex;
     align-items: baseline
-    
 }
 
 .rating-point {
@@ -184,13 +206,19 @@ header {
     margin-left: 23px;
 
 }
-.course-duration i{
-   font-size: 20px;
-    
+
+.course-duration i {
+    font-size: 20px;
+
 }
+
 .course-duration h4 {
     font-weight: 500;
     font-size: 12px;
+}
+
+.hidden {
+    display: none;
 }
 
 /* ************************** responsive ******************* */
@@ -201,29 +229,29 @@ header {
     }
 
     .blog-section {
-        
+
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .course-plan{
+    .course-plan {
         grid-template-columns: repeat(1, 1fr);
-       
-        
+
+
     }
-    .course-section{
+
+    .course-section {
         width: 100%;
         margin: 0px auto;
     }
 }
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
-    .course-plan{
+    .course-plan {
         grid-template-columns: repeat(2, 1fr);
         max-width: 100%;
         margin: 0px auto;
-        
+
     }
-    .course-section{
-        
-    }
+
+    .course-section {}
 }
