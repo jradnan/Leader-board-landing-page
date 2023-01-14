@@ -4,12 +4,14 @@
     padding: 0px;
     margin: 0px;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
+    
+    
 
 }
 
 body {
     background-color: #F3F1FF;
+    overflow-x: hidden;
     width: 100%;
 
 
@@ -214,11 +216,13 @@ header {
 @media only screen and (max-width: 688px) {
     .hero-section-main {
         grid-template-columns: repeat(2, 1fr);
+        width: 100%;
     }
 
     .blog-section {
-
         grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        
     }
 
     .course-plan {
@@ -227,10 +231,7 @@ header {
 
     }
 
-    .course-section {
-        width: 100%;
-        margin: 0px auto;
-    }
+  
 }
 
 @media only screen and (min-width: 689px) and (max-width: 992px) {
