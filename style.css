@@ -218,12 +218,19 @@ header {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
     }
-
+    .player-title>h3 {
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .blog-section-column {
+       flex-direction: column;
+    }
     .blog-section {
         grid-template-columns: repeat(1, 1fr);
         width: 100%;
         
     }
+    
 
     .course-plan {
         grid-template-columns: repeat(1, 1fr);
@@ -242,5 +249,5 @@ header {
 
     }
 
-    .course-section {}
+   
 }
