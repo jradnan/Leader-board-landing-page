@@ -213,20 +213,21 @@ header {
 
 /* ************************** responsive ******************* */
 
+
 @media only screen and (max-width: 688px) {
     .hero-section-main {
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
     }
     .player-title>h3 {
-        font-size: 10px;
+        font-size: 18px;
         font-weight: 500;
     }
     .blog-section-column {
        flex-direction: column;
     }
     .blog-section {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         width: 100%;
         
     }
@@ -250,4 +251,29 @@ header {
     }
 
    
+}
+@media only screen and (max-width:400px) {
+    body{
+        overflow-x: hidden;
+      
+    }
+    .logo img {
+        width: 30px;
+    }
+    .logo h1 {
+        font-size: 20px;
+        font-weight: 500;
+    }
+    /* .hero-section{
+        padding: 10px;
+    } */
+    .player-title>h3 {
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .blog-section {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        
+    }
 }
